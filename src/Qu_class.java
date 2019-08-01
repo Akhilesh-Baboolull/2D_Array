@@ -26,16 +26,16 @@ public class Qu_class {
 			System.out.print("Enter number of Students: ");
 			numOfStuds = myIn.nextInt();
 			
-			if(numOfStuds <= 0) {
+			if(numOfStuds <= 0) { //validating first index of the array
 				System.out.print("Wrong Number of students entered! Please Re-Enter.");
 			}
 			
 		}while(numOfStuds <= 0);
 		
-		studDb = new int[numOfStuds][NUMOFMODULES];
+		studDb = new int[numOfStuds][NUMOFMODULES]; //defining 2D array
 		
 		
-		for(int row = 0;row <= studDb.length - 1;row++) {
+		for(int row = 0;row <= studDb.length - 1;row++) { //insertion in the array
 			
 			System.out.println("Details for Student " + (row + 1) + " : ");
 			
@@ -70,8 +70,8 @@ public class Qu_class {
 			
 		}
 		
-		System.out.println();
-		
+		System.out.println(); //leaving a line
+		//Output in the form of a table with headings
 		System.out.println("Stud Num     AP     IT     Prog     H&N     Mgmt     Py");
 			for(int row = 0;row <= studDb.length - 1;row++) {
 			
@@ -83,7 +83,7 @@ public class Qu_class {
 						
 			}
 			
-			System.out.println();
+			System.out.println(); //Change line after each student
 			
 			}
 		
